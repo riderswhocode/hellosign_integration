@@ -1,0 +1,50 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: rgb(0,0,0);
+  font-size: 1em;
+  background-color: rgb(224,224,224);
+  position: relative;
+  height: 100vh;
+}
+
+.content-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.separator {
+  border-bottom: 1px solid #a2a2a2;
+  width: 35px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.section-header {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.section-body {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.signature-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.signature-table table {
+  margin: 0 auto;
+}
