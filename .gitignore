@@ -1,6 +1,5 @@
 .gitignore
 node_modules
-public
 .env
 agreement.pdf
 hellosignEmbeddedGetSignURLMethod response.json

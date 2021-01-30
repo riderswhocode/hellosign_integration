@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Hello Sign</title>
+    </head>
+    <body>
+        <h2>Test Form</h2>
+    </body>
+<script src="https://cdn.hellosign.com/public/js/embedded/v2.9.0/embedded.production.min.js"></script>
+<script type="text/javascript">
+    let signUrl = "https://app.hellosign.com/editor/embeddedSign?signature_id=6204728c00fa1f2a1e2c5ee8ba7e836c&token=1ba36c2bcad93269757064650a5f210f"
+    // const client = new window.HelloSign({
+    //     clientId: 'Your client ID'
+    // });
+    function getSignUrl(signUrl) {
+        const client = new HelloSign()
+
+        client.open(signUrl, {
+        clientId: '5f86a503c0e0f2cf9908ccbe5df1d16a',
+        skipDomainVerification: true,
+        redirectTo: '/payment/update/'
+        })
+    }
+    document.addEventListener("DOMContentLoaded", getSignUrl(signUrl))
+</script>
+</html>
