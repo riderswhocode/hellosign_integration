@@ -1,7 +1,0 @@
-.gitignore
-node_modules
-.env
-agreement.pdf
-hellosignEmbeddedGetSignURLMethod response.json
-hellosignSignatureRequest.send response.json
-package-lock.json
