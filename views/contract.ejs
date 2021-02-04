@@ -10,12 +10,10 @@
 <script src="https://cdn.hellosign.com/public/js/embedded/v2.9.0/embedded.production.min.js"></script>
 <script type="text/javascript">
     const signUrl = '<%= signUrl %>'
-    // const client = new window.HelloSign({
-    //     clientId: 'Your client ID'
-    // });
+    
     function getSignUrl(signUrl) {
         const client = new HelloSign()
-
+        console.log(signUrl)
         client.open(signUrl, {
         clientId: '<%= clientId %>',
         skipDomainVerification: true,
@@ -23,6 +21,6 @@
         redirectTo: '/payment/update/'
         })
     }
-    document.addEventListener("DOMContentLoaded", getSignUrl(signUrl))
+    document.addEventListener("DOMContentLoaded", getSignUrl(signUrl.replace('&amp;', '&')))
 </script>
 </html>
